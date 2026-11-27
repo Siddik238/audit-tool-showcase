@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audit Tool · Siddik Boyalakuntla</title>
+<meta name="description" content="Project cost control and earned value management (EVM) for infrastructure contractors in the UAE. It shows where every project stands on budget, schedule, cash and margin.">
+<style>
+:root{--ink:#0f172a;--muted:#5b6475;--line:#e3e7ee;--bg:#f6f7f9;--card:#fff;--navy:#0f1b2d;--accent:#c8932f}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--accent)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header{background:var(--navy);color:#fff;padding:56px 0 120px}
+.eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#9fb0c8;margin:0 0 12px}
+h1{font-size:clamp(34px,5vw,52px);line-height:1.1;margin:0 0 16px;letter-spacing:-.02em}
+.tag{font-size:19px;color:#d5deea;max-width:760px;margin:0}
+.links{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.ghost{border:1px solid #3a4a63;color:#fff}
+.hero{margin-top:-84px}
+.hero img{width:100%;display:block;border-radius:12px;box-shadow:0 20px 50px rgba(15,27,45,.25);border:1px solid var(--line)}
+.hero p{color:var(--muted);font-size:14px;margin:10px 0 0;text-align:center}
+.status{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:14px 18px;margin:32px 0 0;color:#333c4d;font-size:15px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:32px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+.stat b{display:block;font-size:28px;letter-spacing:-.01em}
+.stat span{color:var(--muted);font-size:14px}
+section{padding:28px 0}
+h2{font-size:26px;margin:0 0 14px;letter-spacing:-.01em}
+.lead{font-size:17px;max-width:820px;color:#2a3242}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+.card h3{margin:0 0 6px;font-size:17px}
+.card p{margin:0;color:#414a5b;font-size:15px}
+.stack{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.stack li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:14px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+figure img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;object-position:top}
+figcaption{padding:10px 14px;font-size:14px;color:var(--muted);border-top:1px solid var(--line)}
+.note{color:var(--muted);font-size:14px;margin:-6px 0 16px}
+footer{border-top:1px solid var(--line);margin-top:28px;padding:28px 0 48px;color:var(--muted);font-size:14px}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.grid,.gallery{grid-template-columns:1fr}header{padding:40px 0 96px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<p class="eyebrow">Project · Siddik Boyalakuntla</p>
+<h1>Audit Tool</h1>
+<p class="tag">Project cost control and earned value management (EVM) for infrastructure contractors in the UAE. It shows where every project stands on budget, schedule, cash and margin.</p>
+<div class="links"><a class="btn primary" href="#screens">See the screens</a><a class="btn ghost" href="https://www.linkedin.com/in/siddikboyalakuntla">LinkedIn</a><a class="btn ghost" href="https://github.com/Siddik238">More projects on GitHub</a></div>
+</div></header>
+<main class="wrap">
+<div class="hero"><img src="images/01-portfolio.jpg" alt="Portfolio overview: four projects, warnings and budget against forecast"><p>Portfolio overview: four projects, warnings and budget against forecast. All data is fictional.</p></div>
+<div class="status"><b>Status:</b> Complete, working web app I built as a side project for construction contractors. Every company, person and figure shown is fictional seed data. The source code is private; I am happy to walk through it in an interview.</div>
+<div class="stats"><div class="stat"><b>25,000+</b><span>lines of TypeScript</span></div><div class="stat"><b>180+</b><span>automated unit tests</span></div><div class="stat"><b>13</b><span>business modules with enforced boundaries</span></div><div class="stat"><b>4</b><span>fictional projects, AED 197M portfolio</span></div></div>
+<section><h2>The problem</h2><p class="lead">On a construction contract, the margin can disappear months before anyone notices. Costs sit in the accounting system, progress in site reports, variations and payment certificates in the commercial team&#x27;s spreadsheets. By the time they are put together at month end, it is too late to act.</p><p class="lead">Audit Tool brings costs, progress, commercial and cash data together per project and keeps earned value (CPI, SPI, forecast final cost and margin) up to date, so management sees which projects need attention and why.</p></section>
+<section><h2>What it does</h2><div class="grid"><div class="card"><h3>Portfolio and project dashboards</h3><p>Contract value, cost to date, forecast final cost, margin and CPI/SPI per project. Also an S-curve, cost by type, the largest forecast overruns and a work breakdown.</p></div><div class="card"><h3>Costs and imports</h3><p>Manual cost entry and Excel/CSV imports from the accounting system, with every row checked before saving and whole imports that can be undone.</p></div><div class="card"><h3>Commercial control</h3><p>Variations and claims, extension-of-time claims, interim payment certificates (IPCs) with retention and advance recovery, subcontractor claims, guarantees and the final account.</p></div><div class="card"><h3>Purchasing and materials</h3><p>Quotation comparison, purchase orders, a three-way match of order, delivery and invoice, and material checks against the bill of quantities.</p></div><div class="card"><h3>Cash flow and reports</h3><p>Monthly money in against money out with a forecast, VAT, month close with snapshots, and reports.</p></div><div class="card"><h3>Site and schedule</h3><p>Site diary with safety statistics (LTIFR), permits with expiry alerts, documents and RFIs, and a Primavera P6 (.xer) schedule reader.</p></div><div class="card"><h3>Payroll with privacy</h3><p>Staff costs shared across projects under a 100% rule, with individual salaries hidden from project users.</p></div><div class="card"><h3>Administration</h3><p>Roles and permissions grid, approval limits, currencies, feature switches, backup and a full audit trail of who changed what.</p></div></div></section>
+<section><h2>How it is built</h2><div class="grid"><div class="card"><h3>Modular monolith</h3><p>One app and one database split into modules with a single front door each. Lint rules and an architecture test block any import that crosses a boundary before deploy.</p></div><div class="card"><h3>Tested business rules</h3><p>The EVM, payment certificate, payroll and cash-flow maths are pure functions covered by 180+ Vitest tests. CI runs a typecheck, tests, lint, a dependency vulnerability audit and a production build on every push.</p></div><div class="card"><h3>Security and governance</h3><p>Personal accounts only, two-step sign-in (TOTP) for administrators and approvers, and automatic deactivation on a leaver&#x27;s last day. Also a network allowlist, approval limits, and an append-only audit trail exportable to Excel.</p></div><div class="card"><h3>Ready to deploy two ways</h3><p>On Vercel with Neon Postgres, or on the company&#x27;s own Linux server with nginx, systemd timers, encrypted nightly backups with a restore test, and written security, incident-response and on-premise guides.</p></div></div></section>
+<section><h2>Tech stack</h2><ul class="stack"><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Drizzle ORM</li><li>PostgreSQL</li><li>PGlite</li><li>Tailwind CSS 4</li><li>ECharts</li><li>ExcelJS</li><li>Vitest</li><li>GitHub Actions</li><li>Vercel</li><li>nginx</li><li>systemd</li></ul></section>
+<section id="screens"><h2>Screens</h2><p class="note">Click any screen to open it full size. All companies, people and figures are fictional.</p><div class="gallery"><figure><a href="images/02-project.jpg" target="_blank" rel="noopener"><img src="images/02-project.jpg" alt="Project dashboard: earned value, S-curve and cost by type" loading="lazy"></a><figcaption>Project dashboard: earned value, S-curve and cost by type</figcaption></figure><figure><a href="images/03-cash-flow.jpg" target="_blank" rel="noopener"><img src="images/03-cash-flow.jpg" alt="Cash flow: money in against money out, with funding need and forecast" loading="lazy"></a><figcaption>Cash flow: money in against money out, with funding need and forecast</figcaption></figure><figure><a href="images/04-payment-certificates.jpg" target="_blank" rel="noopener"><img src="images/04-payment-certificates.jpg" alt="Interim payment certificates with retention and advance recovery" loading="lazy"></a><figcaption>Interim payment certificates with retention and advance recovery</figcaption></figure><figure><a href="images/05-import.jpg" target="_blank" rel="noopener"><img src="images/05-import.jpg" alt="Importing costs from Excel, with every row checked" loading="lazy"></a><figcaption>Importing costs from Excel, with every row checked</figcaption></figure><figure><a href="images/06-roles.jpg" target="_blank" rel="noopener"><img src="images/06-roles.jpg" alt="Roles &amp; permissions grid" loading="lazy"></a><figcaption>Roles &amp; permissions grid</figcaption></figure><figure><a href="images/07-audit-trail.jpg" target="_blank" rel="noopener"><img src="images/07-audit-trail.jpg" alt="Audit trail: every change, who made it and when" loading="lazy"></a><figcaption>Audit trail: every change, who made it and when</figcaption></figure><figure><a href="images/08-payroll.jpg" target="_blank" rel="noopener"><img src="images/08-payroll.jpg" alt="Payroll charged to projects, with salaries kept private" loading="lazy"></a><figcaption>Payroll charged to projects, with salaries kept private</figcaption></figure></div></section>
+<section><h2>My role</h2><p class="lead">I designed and built the whole app on my own as a side project: I defined the business rules for earned value, payment certificates and cash flow, built the modular architecture and database schema with migrations, and wrote the test suite and CI pipeline. I also seeded a realistic fictional portfolio to test against, and wrote the deployment, security and user guides.</p></section>
+</main>
+<footer><div class="wrap">Siddik Boyalakuntla · Sydney, NSW · <a href="mailto:siddiek.b@gmail.com">siddiek.b@gmail.com</a> · <a href="https://www.linkedin.com/in/siddikboyalakuntla">LinkedIn</a> · <a href="https://github.com/Siddik238">GitHub</a></div></footer>
+</body>
+</html>
